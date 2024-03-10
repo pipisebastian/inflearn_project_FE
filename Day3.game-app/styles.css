@@ -1,0 +1,157 @@
+/* cdn import */
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.game {
+  width: 450px;
+  height: 375px;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  border-radius: 20px;
+
+  border: 4px solid #1abc9c;
+  box-shadow: 0px 10px 0px 0px #1abc9c;
+  padding: 32px;
+  align-items: center;
+
+  gap: 16px;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  height: 210px;
+  border: 1px solid #1abc9c;
+  border-radius: 10px;
+  background-color: #1abc9c;
+
+  color: white;
+}
+.score {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.playerScore,
+.computerScore {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+}
+.p-choice,
+.c-choice {
+  width: 35%;
+
+  background-color: #14b693;
+  color: #0d7f66;
+  font-weight: bold;
+
+  height: 100px;
+  font-size: 1.5rem;
+
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scale: 1;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.winnerChoice {
+  scale: 1.01;
+  background-color: white;
+  color: #14af8d;
+  font-size: 1.75rem;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.loserChoice {
+  scale: 0.9;
+  background-color: #14b693;
+  color: #087059;
+  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.p-count,
+.c-count {
+  font-size: 1.5rem;
+}
+
+.options {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+  justify-content: space-evenly;
+}
+
+.button {
+  width: 100%;
+  height: 70px;
+  border-radius: 20px;
+  border: 2px solid #1abc9ca0;
+  box-shadow: 0px 5px 0px 0px #1abc9ca0;
+  background-color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #1abc9c;
+  font-weight: bold;
+  transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.button:hover {
+  background-color: #1abc9c17;
+
+  transform: scale(1.05);
+  transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.move {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.movesleft {
+  position: absolute;
+  top: 48px;
+  right: 48px;
+  font-size: 1.5rem;
+}
+
+.reload {
+  display: none;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.result {
+  font-size: 1.5rem;
+  width: 100%;
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  justify-content: center;
+  color: #1abc9c;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.resultWinner {
+  color: white;
+  transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  background-color: #1abc9c;
+}
