@@ -1,0 +1,12 @@
+.icon-button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  scale: 1;
+}
+.icon-button:hover {
+  scale: 1.25;
+}

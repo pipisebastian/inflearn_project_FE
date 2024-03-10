@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 16px;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+  cursor: pointer;
+  border: 1.5px solid transparent;
+}
+
+.containerSky {
+  background-color: #cfe6e73c;
+  border: 1.5px solid #6ccbc670;
+}
+
+.container:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
+  transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.contents {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--green-500);
+  display: flex;
+  justify-content: space-between;
+}
+
+.end {
+  width: 100%;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}

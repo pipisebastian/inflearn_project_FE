@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100%;
+
+  color: var(--gray-400);
+}
+
+.contents {
+  display: grid;
+  margin: 8px;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.sort {
+  color: var(--green-500);
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 20px;
+  top: 95px;
+}

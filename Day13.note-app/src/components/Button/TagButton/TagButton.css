@@ -1,0 +1,28 @@
+.tag-button {
+  border: none;
+  padding: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background-color: var(--gray-200);
+}
+
+.checked {
+  background-color: var(--green-400);
+  color: white;
+}
+
+.tag-close-icon {
+  width: 16px;
+  height: 16px;
+  color: var(--gray-500);
+  cursor: pointer;
+  border-radius: 99px;
+}
+
+.tag-close-icon:hover {
+  scale: 1.1;
+}
