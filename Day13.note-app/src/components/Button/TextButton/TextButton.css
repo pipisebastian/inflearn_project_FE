@@ -1,0 +1,17 @@
+.text-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: var(--green-400);
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.text-button:hover {
+  background-color: var(--green-500);
+}
