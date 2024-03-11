@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--green-400);
+  background-color: white;
+  border-bottom: 0.5px solid #00000030;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 8px;
+}
