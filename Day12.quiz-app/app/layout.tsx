@@ -1,26 +1,27 @@
-import Link from "next/link"
+import Link from "next/link";
+import { Header } from "../components/Header";
+import "../styles/globals.css";
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html>
       <head />
       <body>
         <nav>
-          <Link href="/">
-            Home
-          </Link>&nbsp;&nbsp;
-          <Link href="/posts">
-            Post
-          </Link>
+          <Header />
         </nav>
-          <main>
-            {children}
-          </main>
+        <main
+          style={{
+            padding: "20px",
+          }}
+        >
+          {children}
+        </main>
       </body>
     </html>
-  )
+  );
 }
