@@ -9,10 +9,10 @@ const initialState: Note[] = [
     content:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, ',
     selectedTags: ['코딩', '프론트엔드'],
-    createdAt: new Date('2024-01-01 12:20:30'),
+    createdDate: new Date('2024-01-01 12:20:30'),
     isHighPriority: true,
     isPinned: true,
-    backgroundColor: 'WHITE',
+    color: 'WHITE',
     state: 'ACTIVE',
   },
   {
@@ -20,10 +20,10 @@ const initialState: Note[] = [
     title: 'NOTE 2',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor   ',
     selectedTags: ['코딩', '백엔드'],
-    createdAt: new Date('2020-03-01 12:20:30'),
+    createdDate: new Date('2020-03-01 12:20:30'),
     isHighPriority: false,
     isPinned: true,
-    backgroundColor: 'SKY',
+    color: 'SKY',
     state: 'ACTIVE',
   },
   {
@@ -31,10 +31,10 @@ const initialState: Note[] = [
     title: 'NOTE 3',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor   ',
     selectedTags: ['프론트엔드', '백엔드'],
-    createdAt: new Date('2024-03-01 12:20:30'),
+    createdDate: new Date('2024-03-01 12:20:30'),
     isHighPriority: false,
     isPinned: true,
-    backgroundColor: 'WHITE',
+    color: 'WHITE',
     state: 'ACTIVE',
   },
   {
@@ -42,10 +42,10 @@ const initialState: Note[] = [
     title: 'NOTE 4',
     content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit,  ',
     selectedTags: ['코딩'],
-    createdAt: new Date('2024-01-11 12:20:30'),
+    createdDate: new Date('2024-01-11 12:20:30'),
     isHighPriority: true,
     isPinned: false,
-    backgroundColor: 'SKY',
+    color: 'SKY',
     state: 'ACTIVE',
   },
 ];
@@ -111,13 +111,13 @@ export const noteSlice = createSlice({
 
     sortDateLatest: (state) => {
       return state.sort((a, b) => {
-        return a.createdAt < b.createdAt ? 1 : -1;
+        return a.createdDate < b.createdDate ? 1 : -1;
       });
     },
 
     sortDateOldest: (state) => {
       return state.sort((a, b) => {
-        return a.createdAt < b.createdAt ? -1 : 1;
+        return a.createdDate < b.createdDate ? -1 : 1;
       });
     },
   },

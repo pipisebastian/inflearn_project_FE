@@ -25,11 +25,12 @@ export const NoteCard = (
 
   const currentPath = decodeURI(location.pathname);
   const isMainPage = currentPath === '/';
+  const isTagPage = currentPath.includes('/tag');
   const isArchivePage = currentPath === '/archive';
   const isTrashPage = currentPath === '/trash';
 
   return (
-    <div className={`${styles.container} ${noteCardProps.backgroundColor === 'SKY' ? styles.containerSky : ''}`}>
+    <div className={`${styles.container} ${noteCardProps.color === 'SKY' ? styles.containerSky : ''}`}>
       <div className={styles.title}>
         {noteCardProps.title}
         <div>
@@ -64,10 +65,10 @@ export const NoteCard = (
         })}
       </div>
       <span className={styles.end}>
-        <span>{format(noteCardProps.createdAt, 'yyyy-MM-dd')}</span>
+        <span>{format(noteCardProps.createdDate, 'yyyy-MM-dd')}</span>
 
         <span>
-          {isMainPage && (
+          {(isMainPage || isTagPage) && (
             <IconButton
               icon={<VscEdit color={color.green500} />}
               onClick={() => {
@@ -77,7 +78,7 @@ export const NoteCard = (
               }}
             />
           )}
-          {(isArchivePage || isMainPage) && (
+          {(isArchivePage || isMainPage || isTagPage) && (
             <IconButton
               icon={
                 noteCardProps.state === 'ARCHIVED' ? (
