@@ -1,0 +1,76 @@
+:root {
+  --gray-100: #f7f9fa;
+  --gray-200: #cccccc;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.button {
+  display: flex;
+  width: 150px;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid var(--gray-200);
+  border-bottom: 4px solid var(--gray-200);
+  border-radius: 16px;
+  background-color: white;
+  font-size: 1.1rem;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.button:hover {
+  background-color: var(--gray-100);
+  transform: scale(1.05);
+  transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+
+.title {
+  text-align: center;
+}
+
+.food-container {
+  display: grid;
+  gap: 20px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 225px 1fr;
+  width: 650px;
+  gap: 16px;
+}
+
+.img {
+  object-fit: cover;
+  height: 250px;
+  border-radius: 10px;
+}
