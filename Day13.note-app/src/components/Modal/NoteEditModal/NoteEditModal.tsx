@@ -27,7 +27,7 @@ const NoteEditModal = (
   const [content, setContent] = useState(props.content);
   const [selectedTags, setSelectedTags] = useState(props.selectedTags);
   const [priority, setPriority] = useState(props.isHighPriority ? 'high' : 'low');
-  const [backgroundColor, setBackgroundColor] = useState(props.backgroundColor);
+  const [color, setBackgroundColor] = useState(props.color);
 
   const ref = useRef<HTMLDivElement>(null);
 
@@ -41,9 +41,9 @@ const NoteEditModal = (
       title: title,
       content: content,
       selectedTags: selectedTags,
-      createdAt: new Date(),
+      createdDate: new Date(),
       isHighPriority: priority === 'high' ? true : false,
-      backgroundColor: backgroundColor === 'WHITE' ? 'WHITE' : 'SKY',
+      color: color === 'WHITE' ? 'WHITE' : 'SKY',
       isPinned: false,
       state: 'ACTIVE',
     };
@@ -173,7 +173,7 @@ const NoteEditModal = (
                   type="radio"
                   id="WHITE"
                   value="WHITE"
-                  checked={backgroundColor === 'WHITE'}
+                  checked={color === 'WHITE'}
                   onChange={() => setBackgroundColor('WHITE')}
                 />
                 <label htmlFor="WHITE">white</label>
@@ -181,7 +181,7 @@ const NoteEditModal = (
                   type="radio"
                   id="SKY"
                   value="SKY"
-                  checked={backgroundColor === 'SKY'}
+                  checked={color === 'SKY'}
                   onChange={() => setBackgroundColor('SKY')}
                 />
                 <label htmlFor="SKY">sky</label>

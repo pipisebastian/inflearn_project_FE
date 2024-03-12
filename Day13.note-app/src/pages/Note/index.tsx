@@ -58,11 +58,11 @@ export const NotePage = () => {
         title={note.title}
         content={note.content}
         selectedTags={note.selectedTags}
-        createdAt={note.createdAt}
+        createdDate={note.createdDate}
         isHighPriority={note.isHighPriority}
         isPinned={note.isPinned}
         state={note.state}
-        backgroundColor={note.backgroundColor}
+        color={note.color}
         setSelectedNote={setSelectedNote}
         setNoteEditModalOpen={setNoteEditModalOpen}
       />
@@ -185,9 +185,9 @@ export const NotePage = () => {
             title={selectedNote.title}
             content={selectedNote.content}
             selectedTags={selectedNote.selectedTags}
-            createdAt={selectedNote.createdAt}
+            createdDate={selectedNote.createdDate}
             isHighPriority={selectedNote.isHighPriority}
-            backgroundColor={selectedNote.backgroundColor === 'WHITE' ? 'WHITE' : 'SKY'}
+            color={selectedNote.color === 'WHITE' ? 'WHITE' : 'SKY'}
             isPinned={selectedNote.isPinned}
             state={selectedNote.state}
             setModalOpen={setNoteEditModalOpen}
@@ -198,9 +198,9 @@ export const NotePage = () => {
             title=""
             content=""
             selectedTags={[]}
-            createdAt={new Date()}
+            createdDate={new Date()}
             isHighPriority={true}
-            backgroundColor="WHITE"
+            color="WHITE"
             setModalOpen={setNoteEditModalOpen}
             isPinned={false}
             state={'ACTIVE'}
