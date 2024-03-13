@@ -1,23 +1,22 @@
 ## 인프런 워밍업 클럽 과제
 
 ### 1. 음식 메뉴 앱
-![image](https://github.com/pipisebastian/inflearn_project_FE/assets/81643702/16882634-d855-4324-9649-15e42c52449b)
+![메뉸](https://github.com/pipisebastian/inflearn_project_FE/assets/81643702/0930470f-181b-4fd9-a8d5-4b5df629f6bd)
 
 ### 2. 가위바위보 앱
-![image](https://github.com/pipisebastian/inflearn_project_FE/assets/81643702/351f4e2c-7d59-4dc2-a264-25d7d4302662)
+![znlwm](https://github.com/pipisebastian/inflearn_project_FE/assets/81643702/8271144d-6b23-4f14-888f-a9c69e3fcbe1)
 
 ### 3. 퀴즈 앱
-![image](https://github.com/pipisebastian/inflearn_project_FE/assets/81643702/11907e49-0f96-4a18-a6b2-f39c9ca1d2d2)
+![zxi](https://github.com/pipisebastian/inflearn_project_FE/assets/81643702/b796a40a-16c5-47b4-a200-debe97a77847)
 
 ### 4. 예산 계산기 앱
-![image](https://github.com/pipisebastian/inflearn_project_FE/assets/81643702/944fa05a-9467-40c3-b189-2108d02544b8)
+![무제](https://github.com/pipisebastian/inflearn_project_FE/assets/81643702/5171769e-9d9a-4160-ac5e-283b9478b815)
 
 ### 5. 디즈니 플러스 앱
-![image](https://github.com/pipisebastian/inflearn_project_FE/assets/81643702/5137a61e-b9ec-439a-b8b8-8bbde11b1fb4)
+![무제222](https://github.com/pipisebastian/inflearn_project_FE/assets/81643702/6609922a-2fdb-4b88-9250-8df08bae7304)
 
 ### 6. next js를 사용한 퀴즈 앱
-![image](https://github.com/pipisebastian/inflearn_project_FE/assets/81643702/6cdbde00-c96e-41d3-8693-863fabb44359)
+![으악](https://github.com/pipisebastian/inflearn_project_FE/assets/81643702/37b4621f-28fd-4624-a08e-b6f1e97e40e4)
 
 ### 7. 노트 앱
-![image](https://github.com/pipisebastian/inflearn_project_FE/assets/81643702/ca4e6a0d-6f3f-4af8-a154-02b88e4ad6a1)
-![image](https://github.com/pipisebastian/inflearn_project_FE/assets/81643702/e07d2ce8-298a-4607-adc7-87329e0e38c5)
+![ㅃ찐막](https://github.com/pipisebastian/inflearn_project_FE/assets/81643702/cb806267-8c39-4b73-a7c1-2c1bafdbd51b)
